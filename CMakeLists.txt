@@ -64,6 +64,7 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     "TINYUSB-SRC/portable/st/stm32_fsdev/fsdev_common.c"
 
     "Core/Src/USB/usb_descriptors.c" 
+    "Core/Src/USB/usb.cpp"
 )
 
 # Add include paths

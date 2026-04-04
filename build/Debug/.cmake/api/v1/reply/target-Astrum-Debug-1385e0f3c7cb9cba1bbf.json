@@ -43,7 +43,7 @@
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 70,
+				"line" : 71,
 				"parent" : 0
 			},
 			{
@@ -306,7 +306,8 @@
 			},
 			"sourceIndexes" : 
 			[
-				12
+				12,
+				21
 			]
 		}
 	],
@@ -370,7 +371,8 @@
 				17,
 				18,
 				19,
-				20
+				20,
+				21
 			]
 		},
 		{
@@ -384,7 +386,6 @@
 			"name" : "Object Libraries",
 			"sourceIndexes" : 
 			[
-				21,
 				22,
 				23,
 				24,
@@ -405,7 +406,8 @@
 				39,
 				40,
 				41,
-				42
+				42,
+				43
 			]
 		}
 	],
@@ -535,6 +537,12 @@
 			"backtrace" : 6,
 			"compileGroupIndex" : 0,
 			"path" : "Core/Src/USB/usb_descriptors.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 2,
+			"path" : "Core/Src/USB/usb.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
