@@ -16,7 +16,7 @@ public:
     static bool connected();
 
     // Write raw binary data
-    static void write(const uint8_t* data, size_t len);
+    static size_t write(const uint8_t* data, size_t len);
 
     // Write null-terminated string
     static void writeString(const char* str);

@@ -34,17 +34,19 @@ bool USBTransport::isFull()
     return ((head + 1) % BUFFER_SIZE) == tail;
 }
 
-void USBTransport::write(const uint8_t* data, size_t len)
+size_t USBTransport::write(const uint8_t* data, size_t len)
 {
+    size_t written = 0;
+
     for (size_t i = 0; i < len; i++) {
-        if (isFull()) {
-            // Drop data if buffer is full (can be changed to overwrite policy)
-            return;
-        }
+        if (isFull()) break;
 
         buffer[head] = data[i];
         head = (head + 1) % BUFFER_SIZE;
+        written++;
     }
+
+    return written;
 }
 
 void USBTransport::writeString(const char* str)
@@ -54,7 +56,7 @@ void USBTransport::writeString(const char* str)
 
 void USBTransport::printf(const char* fmt, ...)
 {
-    char temp[256];
+    char temp[512];
 
     va_list args;
     va_start(args, fmt);
@@ -69,14 +71,15 @@ void USBTransport::task()
     tud_task();
 
     if (!connected()) return;
+    
+    uint32_t count = 0;
 
     while (!isEmpty()) {
 
         uint32_t available = tud_cdc_write_available();
         if (available == 0) break;
 
-        uint32_t count = 0;
-        uint8_t temp[64];  // match USB packet size
+        uint8_t temp[128]; //TinyUSB automatic packet split
 
         while (!isEmpty() && count < sizeof(temp) && count < available) {
             temp[count++] = buffer[tail];
@@ -86,5 +89,7 @@ void USBTransport::task()
         tud_cdc_n_write(0, temp, count);
     }
 
-    tud_cdc_write_flush();
+    if (count < 64) {
+        tud_cdc_write_flush();
+    }
 }
