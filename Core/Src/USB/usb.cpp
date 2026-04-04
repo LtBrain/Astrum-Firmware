@@ -22,7 +22,7 @@ void USBTransport::init()
 bool USBTransport::connected()
 {
     return tud_cdc_connected();
-}
+} 
 
 bool USBTransport::isEmpty()
 {
@@ -72,15 +72,18 @@ void USBTransport::task()
 
     while (!isEmpty()) {
 
-        if (tud_cdc_write_available() == 0) {
-            break;
+        uint32_t available = tud_cdc_write_available();
+        if (available == 0) break;
+
+        uint32_t count = 0;
+        uint8_t temp[64];  // match USB packet size
+
+        while (!isEmpty() && count < sizeof(temp) && count < available) {
+            temp[count++] = buffer[tail];
+            tail = (tail + 1) % BUFFER_SIZE;
         }
 
-        uint8_t byte = buffer[tail];
-
-        tud_cdc_n_write(0, &byte, 1);
-
-        tail = (tail + 1) % BUFFER_SIZE;
+        tud_cdc_n_write(0, temp, count);
     }
 
     tud_cdc_write_flush();
