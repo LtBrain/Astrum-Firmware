@@ -1,0 +1,46 @@
+name: STM32 CMake CI
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      # Replaced the broken arm-software action with the standard one
+      - name: Install ARM GNU Toolchain
+        uses: carlosperate/arm-none-eabi-gcc-action@v1
+        with:
+          release: 'latest' # Or specify a version like '13.2.Rel1'
+
+      - name: Install Ninja & CMake
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ninja-build cmake
+
+      - name: Configure CMake
+        # Fixed path to match your folder: cmake/gcc-arm-none-eabi.cmake
+        run: >
+          cmake -B build -G "Ninja" 
+          -DCMAKE_TOOLCHAIN_FILE=${{ github.workspace }}/cmake/gcc-arm-none-eabi.cmake
+          -DCMAKE_BUILD_TYPE=Release
+
+      - name: Build Firmware
+        run: cmake --build build --parallel
+
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: stm32-binaries
+          path: |
+            build/*.elf
+            build/*.bin
