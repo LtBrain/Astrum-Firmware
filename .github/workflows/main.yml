@@ -14,21 +14,21 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          submodules: recursive # Ensures STM32Cube libraries are pulled if they are submodules
+          submodules: recursive
 
+      # Replaced the broken arm-software action with the standard one
       - name: Install ARM GNU Toolchain
-        uses: arm-software/toolchain-file-action@v1
+        uses: carlosperate/arm-none-eabi-gcc-action@v1
         with:
-          toolchain-name: arm-none-eabi
+          release: 'latest' # Or specify a version like '13.2.Rel1'
 
       - name: Install Ninja & CMake
-        # 'ninja-build' is tiny (~300KB) and highly cached on GitHub's Ubuntu image
         run: |
           sudo apt-get update
           sudo apt-get install -y ninja-build cmake
 
       - name: Configure CMake
-        # Fixed the filename to match your "cmake/gcc-arm-none-eabi.cmake" from the image
+        # Fixed path to match your folder: cmake/gcc-arm-none-eabi.cmake
         run: >
           cmake -B build -G "Ninja" 
           -DCMAKE_TOOLCHAIN_FILE=${{ github.workspace }}/cmake/gcc-arm-none-eabi.cmake
@@ -37,12 +37,10 @@ jobs:
       - name: Build Firmware
         run: cmake --build build --parallel
 
-      - name: Upload Build Artifacts
+      - name: Upload Artifacts
         uses: actions/upload-artifact@v4
         with:
           name: stm32-binaries
-          # This captures your .elf, .bin, and .map files for debugging
           path: |
             build/*.elf
             build/*.bin
-            build/*.map
