@@ -17,9 +17,8 @@
   */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
-
 #include "main.h"
-#include "device/usbd.h"
+#include "crc.h"
 #include "usb.h"
 #include "gpio.h"
 
@@ -94,6 +93,7 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_USB_PCD_Init();
+  MX_CRC_Init();
   /* USER CODE BEGIN 2 */
   tusb_rhport_init_t dev_init = {
 		  .role = TUSB_ROLE_DEVICE,
