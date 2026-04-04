@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/brian/Downloads/CodingStuff/Projects/Astrum/build/Debug/cmake_install.cmake",
+		"C:/Users/brian/Downloads/CodingStuff/Projects/Astrum/build/Debug/cmake/stm32cubemx/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
