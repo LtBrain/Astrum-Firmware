@@ -4807,9 +4807,6 @@ Discarded input sections
  .text          0x00000000        0x0 CMakeFiles/Astrum.dir/Core/Src/main.c.obj
  .data          0x00000000        0x0 CMakeFiles/Astrum.dir/Core/Src/main.c.obj
  .bss           0x00000000        0x0 CMakeFiles/Astrum.dir/Core/Src/main.c.obj
- .bss.rxBuf     0x00000000       0x40 CMakeFiles/Astrum.dir/Core/Src/main.c.obj
- .bss.rxCnt     0x00000000        0x4 CMakeFiles/Astrum.dir/Core/Src/main.c.obj
- .bss.rxIdx     0x00000000        0x4 CMakeFiles/Astrum.dir/Core/Src/main.c.obj
  .debug_macro   0x00000000      0xade CMakeFiles/Astrum.dir/Core/Src/main.c.obj
  .debug_macro   0x00000000      0x1bb CMakeFiles/Astrum.dir/Core/Src/main.c.obj
  .debug_macro   0x00000000       0x22 CMakeFiles/Astrum.dir/Core/Src/main.c.obj
@@ -8375,101 +8372,101 @@ LOAD C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+s
                 [!provide]                        PROVIDE (__arm32_tls_tcb_offset = MAX (0x8, __tls_align))
                 [!provide]                        PROVIDE (__arm64_tls_tcb_offset = MAX (0x10, __tls_align))
 
-.bss            0x2000008c     0x18c0 load address 0x0800a59c
+.bss            0x200000a0     0x18d0 load address 0x0800a59c
  *(.bss)
- .bss           0x2000008c       0x1c C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v8-m.main+fp/hard/crtbegin.o
+ .bss           0x200000a0       0x1c C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v8-m.main+fp/hard/crtbegin.o
  *(.bss*)
- .bss.uwTick    0x200000a8        0x4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal.c.obj
-                0x200000a8                uwTick
- .bss.hcrc      0x200000ac       0x24 CMakeFiles/Astrum.dir/Core/Src/crc.c.obj
-                0x200000ac                hcrc
+ .bss.uwTick    0x200000bc        0x4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal.c.obj
+                0x200000bc                uwTick
+ .bss.hcrc      0x200000c0       0x24 CMakeFiles/Astrum.dir/Core/Src/crc.c.obj
+                0x200000c0                hcrc
  .bss.hpcd_USB_DRD_FS
-                0x200000d0      0x2e4 CMakeFiles/Astrum.dir/Core/Src/usb.c.obj
-                0x200000d0                hpcd_USB_DRD_FS
+                0x200000e4      0x2e4 CMakeFiles/Astrum.dir/Core/Src/usb.c.obj
+                0x200000e4                hpcd_USB_DRD_FS
  .bss.__sbrk_heap_end
-                0x200003b4        0x4 CMakeFiles/Astrum.dir/Core/Src/sysmem.c.obj
+                0x200003c8        0x4 CMakeFiles/Astrum.dir/Core/Src/sysmem.c.obj
  .bss._ZZ8app_loopE8lastTime
-                0x200003b8        0x4 CMakeFiles/Astrum.dir/Core/Src/app.cpp.obj
+                0x200003cc        0x4 CMakeFiles/Astrum.dir/Core/Src/app.cpp.obj
  .bss._ZZ8app_loopE7counter
-                0x200003bc        0x4 CMakeFiles/Astrum.dir/Core/Src/app.cpp.obj
+                0x200003d0        0x4 CMakeFiles/Astrum.dir/Core/Src/app.cpp.obj
  .bss._tusb_rhport_role
-                0x200003c0        0x2 CMakeFiles/Astrum.dir/TINYUSB-SRC/tusb.c.obj
-                0x200003c0                _tusb_rhport_role
- *fill*         0x200003c2        0x2 
+                0x200003d4        0x2 CMakeFiles/Astrum.dir/TINYUSB-SRC/tusb.c.obj
+                0x200003d4                _tusb_rhport_role
+ *fill*         0x200003d6        0x2 
  .bss._usbd_dev
-                0x200003c4       0x37 CMakeFiles/Astrum.dir/TINYUSB-SRC/device/usbd.c.obj
+                0x200003d8       0x37 CMakeFiles/Astrum.dir/TINYUSB-SRC/device/usbd.c.obj
  .bss._usbd_queued_setup
-                0x200003fb        0x1 CMakeFiles/Astrum.dir/TINYUSB-SRC/device/usbd.c.obj
+                0x2000040f        0x1 CMakeFiles/Astrum.dir/TINYUSB-SRC/device/usbd.c.obj
  .bss._app_driver
-                0x200003fc        0x4 CMakeFiles/Astrum.dir/TINYUSB-SRC/device/usbd.c.obj
+                0x20000410        0x4 CMakeFiles/Astrum.dir/TINYUSB-SRC/device/usbd.c.obj
  .bss._app_driver_count
-                0x20000400        0x1 CMakeFiles/Astrum.dir/TINYUSB-SRC/device/usbd.c.obj
- *fill*         0x20000401        0x3 
+                0x20000414        0x1 CMakeFiles/Astrum.dir/TINYUSB-SRC/device/usbd.c.obj
+ *fill*         0x20000415        0x3 
  .bss._usbd_qdef_buf
-                0x20000404       0xc0 CMakeFiles/Astrum.dir/TINYUSB-SRC/device/usbd.c.obj
-                0x20000404                _usbd_qdef_buf
- .bss._usbd_q   0x200004c4        0x4 CMakeFiles/Astrum.dir/TINYUSB-SRC/device/usbd.c.obj
+                0x20000418       0xc0 CMakeFiles/Astrum.dir/TINYUSB-SRC/device/usbd.c.obj
+                0x20000418                _usbd_qdef_buf
+ .bss._usbd_q   0x200004d8        0x4 CMakeFiles/Astrum.dir/TINYUSB-SRC/device/usbd.c.obj
  .bss._ctrl_xfer
-                0x200004c8       0x14 CMakeFiles/Astrum.dir/TINYUSB-SRC/device/usbd_control.c.obj
+                0x200004dc       0x14 CMakeFiles/Astrum.dir/TINYUSB-SRC/device/usbd_control.c.obj
+ *fill*         0x200004f0       0x10 
  .bss._ctrl_epbuf
-                0x200004dc       0x40 CMakeFiles/Astrum.dir/TINYUSB-SRC/device/usbd_control.c.obj
+                0x20000500       0x40 CMakeFiles/Astrum.dir/TINYUSB-SRC/device/usbd_control.c.obj
  .bss._cdcd_itf
-                0x2000051c      0x178 CMakeFiles/Astrum.dir/TINYUSB-SRC/class/cdc/cdc_device.c.obj
+                0x20000540      0x178 CMakeFiles/Astrum.dir/TINYUSB-SRC/class/cdc/cdc_device.c.obj
  .bss.xfer_status
-                0x20000694      0x100 CMakeFiles/Astrum.dir/TINYUSB-SRC/portable/st/stm32_fsdev/dcd_stm32_fsdev.c.obj
+                0x200006b8      0x100 CMakeFiles/Astrum.dir/TINYUSB-SRC/portable/st/stm32_fsdev/dcd_stm32_fsdev.c.obj
  .bss.ep_alloc_status
-                0x20000794       0x20 CMakeFiles/Astrum.dir/TINYUSB-SRC/portable/st/stm32_fsdev/dcd_stm32_fsdev.c.obj
+                0x200007b8       0x20 CMakeFiles/Astrum.dir/TINYUSB-SRC/portable/st/stm32_fsdev/dcd_stm32_fsdev.c.obj
  .bss.remoteWakeCountdown
-                0x200007b4        0x1 CMakeFiles/Astrum.dir/TINYUSB-SRC/portable/st/stm32_fsdev/dcd_stm32_fsdev.c.obj
- *fill*         0x200007b5        0x1 
+                0x200007d8        0x1 CMakeFiles/Astrum.dir/TINYUSB-SRC/portable/st/stm32_fsdev/dcd_stm32_fsdev.c.obj
+ *fill*         0x200007d9        0x1 
  .bss.ep_buf_ptr
-                0x200007b6        0x2 CMakeFiles/Astrum.dir/TINYUSB-SRC/portable/st/stm32_fsdev/dcd_stm32_fsdev.c.obj
+                0x200007da        0x2 CMakeFiles/Astrum.dir/TINYUSB-SRC/portable/st/stm32_fsdev/dcd_stm32_fsdev.c.obj
  .bss._desc_str
-                0x200007b8       0x42 CMakeFiles/Astrum.dir/Core/Src/USB/usb_descriptors.c.obj
- *fill*         0x200007fa        0x2 
+                0x200007dc       0x42 CMakeFiles/Astrum.dir/Core/Src/USB/usb_descriptors.c.obj
+ *fill*         0x2000081e        0x2 
  .bss._ZN12USBTransport6bufferE
-                0x200007fc     0x1000 CMakeFiles/Astrum.dir/Core/Src/USB/usb.cpp.obj
-                0x200007fc                USBTransport::buffer
+                0x20000820     0x1000 CMakeFiles/Astrum.dir/Core/Src/USB/usb.cpp.obj
+                0x20000820                USBTransport::buffer
  .bss._ZN12USBTransport4headE
-                0x200017fc        0x4 CMakeFiles/Astrum.dir/Core/Src/USB/usb.cpp.obj
-                0x200017fc                USBTransport::head
+                0x20001820        0x4 CMakeFiles/Astrum.dir/Core/Src/USB/usb.cpp.obj
+                0x20001820                USBTransport::head
  .bss._ZN12USBTransport4tailE
-                0x20001800        0x4 CMakeFiles/Astrum.dir/Core/Src/USB/usb.cpp.obj
-                0x20001800                USBTransport::tail
- .bss.__sf      0x20001804      0x138 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-findfp.o)
-                0x20001804                __sf
- .bss.errno     0x2000193c        0x4 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-reent.o)
-                0x2000193c                errno
+                0x20001824        0x4 CMakeFiles/Astrum.dir/Core/Src/USB/usb.cpp.obj
+                0x20001824                USBTransport::tail
+ .bss.__sf      0x20001828      0x138 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-findfp.o)
+                0x20001828                __sf
+ .bss.errno     0x20001960        0x4 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-reent.o)
+                0x20001960                errno
  .bss.__lock___malloc_recursive_mutex
-                0x20001940        0x1 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-lock.o)
-                0x20001940                __lock___malloc_recursive_mutex
- *fill*         0x20001941        0x3 
+                0x20001964        0x1 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-lock.o)
+                0x20001964                __lock___malloc_recursive_mutex
+ *fill*         0x20001965        0x3 
  .bss.__malloc_sbrk_start
-                0x20001944        0x4 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-mallocr.o)
-                0x20001944                __malloc_sbrk_start
+                0x20001968        0x4 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-mallocr.o)
+                0x20001968                __malloc_sbrk_start
  .bss.__malloc_free_list
-                0x20001948        0x4 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-mallocr.o)
-                0x20001948                __malloc_free_list
+                0x2000196c        0x4 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-mallocr.o)
+                0x2000196c                __malloc_free_list
  *(COMMON)
-                0x2000194c                        . = ALIGN (0x4)
-                0x2000194c                        _ebss = .
-                0x2000194c                        __bss_end__ = _ebss
+                0x20001970                        . = ALIGN (0x4)
+                0x20001970                        _ebss = .
+                0x20001970                        __bss_end__ = _ebss
                 [!provide]                        PROVIDE (__bss_end = .)
                 [!provide]                        PROVIDE (__non_tls_bss_start = ADDR (.bss))
                 [!provide]                        PROVIDE (__bss_start = __tbss_start)
                 [!provide]                        PROVIDE (__bss_size = (__bss_end - __bss_start))
 
 ._user_heap_stack
-                0x2000194c      0x604 load address 0x0800a59c
-                0x20001950                        . = ALIGN (0x8)
- *fill*         0x2000194c        0x4 
+                0x20001970      0x600 load address 0x0800a59c
+                0x20001970                        . = ALIGN (0x8)
                 [!provide]                        PROVIDE (end = .)
-                0x20001950                        PROVIDE (_end = .)
-                0x20001b50                        . = (. + _Min_Heap_Size)
- *fill*         0x20001950      0x200 
-                0x20001f50                        . = (. + _Min_Stack_Size)
- *fill*         0x20001b50      0x400 
-                0x20001f50                        . = ALIGN (0x8)
+                0x20001970                        PROVIDE (_end = .)
+                0x20001b70                        . = (. + _Min_Heap_Size)
+ *fill*         0x20001970      0x200 
+                0x20001f70                        . = (. + _Min_Stack_Size)
+ *fill*         0x20001b70      0x400 
+                0x20001f70                        . = ALIGN (0x8)
 
 /DISCARD/
  libc.a:*(*)
@@ -8588,7 +8585,7 @@ LOAD C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+s
 OUTPUT(Astrum.elf elf32-littlearm)
 LOAD linker stubs
 
-.debug_info     0x00000000    0x24e29
+.debug_info     0x00000000    0x24de6
  .debug_info    0x00000000      0xce0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32h5xx.c.obj
  .debug_info    0x00000ce0     0x1009 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc.c.obj
  .debug_info    0x00001ce9     0x1204 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc_ex.c.obj
@@ -8601,46 +8598,46 @@ LOAD linker stubs
  .debug_info    0x00006ffd     0x1560 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_pcd.c.obj
  .debug_info    0x0000855d      0x7eb cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_pcd_ex.c.obj
  .debug_info    0x00008d48     0x1a08 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_ll_usb.c.obj
- .debug_info    0x0000a750      0x998 CMakeFiles/Astrum.dir/Core/Src/main.c.obj
- .debug_info    0x0000b0e8      0x5ac CMakeFiles/Astrum.dir/Core/Src/gpio.c.obj
- .debug_info    0x0000b694      0x652 CMakeFiles/Astrum.dir/Core/Src/crc.c.obj
- .debug_info    0x0000bce6     0x104b CMakeFiles/Astrum.dir/Core/Src/usb.c.obj
- .debug_info    0x0000cd31      0x16c CMakeFiles/Astrum.dir/Core/Src/stm32h5xx_it.c.obj
- .debug_info    0x0000ce9d       0x9f CMakeFiles/Astrum.dir/Core/Src/stm32h5xx_hal_msp.c.obj
- .debug_info    0x0000cf3c      0x168 CMakeFiles/Astrum.dir/Core/Src/sysmem.c.obj
- .debug_info    0x0000d0a4       0x30 CMakeFiles/Astrum.dir/startup_stm32h523xx.s.obj
- .debug_info    0x0000d0d4     0x1b23 CMakeFiles/Astrum.dir/Core/Src/app.cpp.obj
- .debug_info    0x0000ebf7     0x15b3 CMakeFiles/Astrum.dir/TINYUSB-SRC/tusb.c.obj
- .debug_info    0x000101aa     0x14ac CMakeFiles/Astrum.dir/TINYUSB-SRC/common/tusb_fifo.c.obj
- .debug_info    0x00011656     0x3395 CMakeFiles/Astrum.dir/TINYUSB-SRC/device/usbd.c.obj
- .debug_info    0x000149eb      0x773 CMakeFiles/Astrum.dir/TINYUSB-SRC/device/usbd_control.c.obj
- .debug_info    0x0001515e     0x1f4b CMakeFiles/Astrum.dir/TINYUSB-SRC/class/cdc/cdc_device.c.obj
- .debug_info    0x000170a9     0x367b CMakeFiles/Astrum.dir/TINYUSB-SRC/portable/st/stm32_fsdev/dcd_stm32_fsdev.c.obj
- .debug_info    0x0001a724      0x6e9 CMakeFiles/Astrum.dir/TINYUSB-SRC/portable/st/stm32_fsdev/fsdev_common.c.obj
- .debug_info    0x0001ae0d      0x78e CMakeFiles/Astrum.dir/Core/Src/USB/usb_descriptors.c.obj
- .debug_info    0x0001b59b     0x122b CMakeFiles/Astrum.dir/Core/Src/USB/usb.cpp.obj
- .debug_info    0x0001c7c6      0xfb2 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-findfp.o)
- .debug_info    0x0001d778      0x89c C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-vsnprintf.o)
- .debug_info    0x0001e014       0xe0 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-memset.o)
- .debug_info    0x0001e0f4      0x8a1 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-reent.o)
- .debug_info    0x0001e995      0x715 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-impure.o)
- .debug_info    0x0001f0aa      0x6fb C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-errno.o)
- .debug_info    0x0001f7a5      0x10b C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-init.o)
- .debug_info    0x0001f8b0      0x218 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-lock.o)
- .debug_info    0x0001fac8      0x121 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-memcpy-stub.o)
- .debug_info    0x0001fbe9       0x31 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-strlen.o)
- .debug_info    0x0001fc1a      0x851 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-freer.o)
- .debug_info    0x0002046b      0x9bc C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-mallocr.o)
- .debug_info    0x00020e27      0x76b C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-mlock.o)
- .debug_info    0x00021592     0x10b3 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-nano-svfprintf.o)
- .debug_info    0x00022645      0xde2 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-nano-vfprintf_i.o)
- .debug_info    0x00023427      0x10f C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-memmove.o)
- .debug_info    0x00023536      0x782 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-sbrkr.o)
- .debug_info    0x00023cb8      0x110 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-memchr-stub.o)
- .debug_info    0x00023dc8      0x8cd C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-reallocr.o)
- .debug_info    0x00024695      0x794 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-msizer.o)
+ .debug_info    0x0000a750      0x955 CMakeFiles/Astrum.dir/Core/Src/main.c.obj
+ .debug_info    0x0000b0a5      0x5ac CMakeFiles/Astrum.dir/Core/Src/gpio.c.obj
+ .debug_info    0x0000b651      0x652 CMakeFiles/Astrum.dir/Core/Src/crc.c.obj
+ .debug_info    0x0000bca3     0x104b CMakeFiles/Astrum.dir/Core/Src/usb.c.obj
+ .debug_info    0x0000ccee      0x16c CMakeFiles/Astrum.dir/Core/Src/stm32h5xx_it.c.obj
+ .debug_info    0x0000ce5a       0x9f CMakeFiles/Astrum.dir/Core/Src/stm32h5xx_hal_msp.c.obj
+ .debug_info    0x0000cef9      0x168 CMakeFiles/Astrum.dir/Core/Src/sysmem.c.obj
+ .debug_info    0x0000d061       0x30 CMakeFiles/Astrum.dir/startup_stm32h523xx.s.obj
+ .debug_info    0x0000d091     0x1b23 CMakeFiles/Astrum.dir/Core/Src/app.cpp.obj
+ .debug_info    0x0000ebb4     0x15b3 CMakeFiles/Astrum.dir/TINYUSB-SRC/tusb.c.obj
+ .debug_info    0x00010167     0x14ac CMakeFiles/Astrum.dir/TINYUSB-SRC/common/tusb_fifo.c.obj
+ .debug_info    0x00011613     0x3395 CMakeFiles/Astrum.dir/TINYUSB-SRC/device/usbd.c.obj
+ .debug_info    0x000149a8      0x773 CMakeFiles/Astrum.dir/TINYUSB-SRC/device/usbd_control.c.obj
+ .debug_info    0x0001511b     0x1f4b CMakeFiles/Astrum.dir/TINYUSB-SRC/class/cdc/cdc_device.c.obj
+ .debug_info    0x00017066     0x367b CMakeFiles/Astrum.dir/TINYUSB-SRC/portable/st/stm32_fsdev/dcd_stm32_fsdev.c.obj
+ .debug_info    0x0001a6e1      0x6e9 CMakeFiles/Astrum.dir/TINYUSB-SRC/portable/st/stm32_fsdev/fsdev_common.c.obj
+ .debug_info    0x0001adca      0x78e CMakeFiles/Astrum.dir/Core/Src/USB/usb_descriptors.c.obj
+ .debug_info    0x0001b558     0x122b CMakeFiles/Astrum.dir/Core/Src/USB/usb.cpp.obj
+ .debug_info    0x0001c783      0xfb2 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-findfp.o)
+ .debug_info    0x0001d735      0x89c C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-vsnprintf.o)
+ .debug_info    0x0001dfd1       0xe0 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-memset.o)
+ .debug_info    0x0001e0b1      0x8a1 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-reent.o)
+ .debug_info    0x0001e952      0x715 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-impure.o)
+ .debug_info    0x0001f067      0x6fb C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-errno.o)
+ .debug_info    0x0001f762      0x10b C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-init.o)
+ .debug_info    0x0001f86d      0x218 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-lock.o)
+ .debug_info    0x0001fa85      0x121 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-memcpy-stub.o)
+ .debug_info    0x0001fba6       0x31 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-strlen.o)
+ .debug_info    0x0001fbd7      0x851 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-freer.o)
+ .debug_info    0x00020428      0x9bc C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-mallocr.o)
+ .debug_info    0x00020de4      0x76b C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-mlock.o)
+ .debug_info    0x0002154f     0x10b3 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-nano-svfprintf.o)
+ .debug_info    0x00022602      0xde2 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-nano-vfprintf_i.o)
+ .debug_info    0x000233e4      0x10f C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-memmove.o)
+ .debug_info    0x000234f3      0x782 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-sbrkr.o)
+ .debug_info    0x00023c75      0x110 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-memchr-stub.o)
+ .debug_info    0x00023d85      0x8cd C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-reallocr.o)
+ .debug_info    0x00024652      0x794 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-msizer.o)
 
-.debug_abbrev   0x00000000     0x69c6
+.debug_abbrev   0x00000000     0x69b2
  .debug_abbrev  0x00000000      0x13a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32h5xx.c.obj
  .debug_abbrev  0x0000013a      0x290 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc.c.obj
  .debug_abbrev  0x000003ca      0x25c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc_ex.c.obj
@@ -8653,44 +8650,44 @@ LOAD linker stubs
  .debug_abbrev  0x00001349      0x302 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_pcd.c.obj
  .debug_abbrev  0x0000164b      0x1e8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_pcd_ex.c.obj
  .debug_abbrev  0x00001833      0x237 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_ll_usb.c.obj
- .debug_abbrev  0x00001a6a      0x220 CMakeFiles/Astrum.dir/Core/Src/main.c.obj
- .debug_abbrev  0x00001c8a      0x15b CMakeFiles/Astrum.dir/Core/Src/gpio.c.obj
- .debug_abbrev  0x00001de5      0x1bd CMakeFiles/Astrum.dir/Core/Src/crc.c.obj
- .debug_abbrev  0x00001fa2      0x240 CMakeFiles/Astrum.dir/Core/Src/usb.c.obj
- .debug_abbrev  0x000021e2       0xa0 CMakeFiles/Astrum.dir/Core/Src/stm32h5xx_it.c.obj
- .debug_abbrev  0x00002282       0x45 CMakeFiles/Astrum.dir/Core/Src/stm32h5xx_hal_msp.c.obj
- .debug_abbrev  0x000022c7       0xbc CMakeFiles/Astrum.dir/Core/Src/sysmem.c.obj
- .debug_abbrev  0x00002383       0x24 CMakeFiles/Astrum.dir/startup_stm32h523xx.s.obj
- .debug_abbrev  0x000023a7      0x277 CMakeFiles/Astrum.dir/Core/Src/app.cpp.obj
- .debug_abbrev  0x0000261e      0x3b9 CMakeFiles/Astrum.dir/TINYUSB-SRC/tusb.c.obj
- .debug_abbrev  0x000029d7      0x356 CMakeFiles/Astrum.dir/TINYUSB-SRC/common/tusb_fifo.c.obj
- .debug_abbrev  0x00002d2d      0x5a4 CMakeFiles/Astrum.dir/TINYUSB-SRC/device/usbd.c.obj
- .debug_abbrev  0x000032d1      0x32d CMakeFiles/Astrum.dir/TINYUSB-SRC/device/usbd_control.c.obj
- .debug_abbrev  0x000035fe      0x4a1 CMakeFiles/Astrum.dir/TINYUSB-SRC/class/cdc/cdc_device.c.obj
- .debug_abbrev  0x00003a9f      0x61b CMakeFiles/Astrum.dir/TINYUSB-SRC/portable/st/stm32_fsdev/dcd_stm32_fsdev.c.obj
- .debug_abbrev  0x000040ba      0x23c CMakeFiles/Astrum.dir/TINYUSB-SRC/portable/st/stm32_fsdev/fsdev_common.c.obj
- .debug_abbrev  0x000042f6      0x1ce CMakeFiles/Astrum.dir/Core/Src/USB/usb_descriptors.c.obj
- .debug_abbrev  0x000044c4      0x3e4 CMakeFiles/Astrum.dir/Core/Src/USB/usb.cpp.obj
- .debug_abbrev  0x000048a8      0x424 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-findfp.o)
- .debug_abbrev  0x00004ccc      0x228 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-vsnprintf.o)
- .debug_abbrev  0x00004ef4       0x9e C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-memset.o)
- .debug_abbrev  0x00004f92      0x1f7 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-reent.o)
- .debug_abbrev  0x00005189      0x149 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-impure.o)
- .debug_abbrev  0x000052d2      0x15e C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-errno.o)
- .debug_abbrev  0x00005430       0xc9 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-init.o)
- .debug_abbrev  0x000054f9      0x115 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-lock.o)
- .debug_abbrev  0x0000560e       0xc1 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-memcpy-stub.o)
- .debug_abbrev  0x000056cf       0x28 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-strlen.o)
- .debug_abbrev  0x000056f7      0x236 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-freer.o)
- .debug_abbrev  0x0000592d      0x24a C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-mallocr.o)
- .debug_abbrev  0x00005b77      0x1bf C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-mlock.o)
- .debug_abbrev  0x00005d36      0x31e C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-nano-svfprintf.o)
- .debug_abbrev  0x00006054      0x28e C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-nano-vfprintf_i.o)
- .debug_abbrev  0x000062e2       0xac C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-memmove.o)
- .debug_abbrev  0x0000638e      0x1da C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-sbrkr.o)
- .debug_abbrev  0x00006568       0xb1 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-memchr-stub.o)
- .debug_abbrev  0x00006619      0x217 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-reallocr.o)
- .debug_abbrev  0x00006830      0x196 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-msizer.o)
+ .debug_abbrev  0x00001a6a      0x20c CMakeFiles/Astrum.dir/Core/Src/main.c.obj
+ .debug_abbrev  0x00001c76      0x15b CMakeFiles/Astrum.dir/Core/Src/gpio.c.obj
+ .debug_abbrev  0x00001dd1      0x1bd CMakeFiles/Astrum.dir/Core/Src/crc.c.obj
+ .debug_abbrev  0x00001f8e      0x240 CMakeFiles/Astrum.dir/Core/Src/usb.c.obj
+ .debug_abbrev  0x000021ce       0xa0 CMakeFiles/Astrum.dir/Core/Src/stm32h5xx_it.c.obj
+ .debug_abbrev  0x0000226e       0x45 CMakeFiles/Astrum.dir/Core/Src/stm32h5xx_hal_msp.c.obj
+ .debug_abbrev  0x000022b3       0xbc CMakeFiles/Astrum.dir/Core/Src/sysmem.c.obj
+ .debug_abbrev  0x0000236f       0x24 CMakeFiles/Astrum.dir/startup_stm32h523xx.s.obj
+ .debug_abbrev  0x00002393      0x277 CMakeFiles/Astrum.dir/Core/Src/app.cpp.obj
+ .debug_abbrev  0x0000260a      0x3b9 CMakeFiles/Astrum.dir/TINYUSB-SRC/tusb.c.obj
+ .debug_abbrev  0x000029c3      0x356 CMakeFiles/Astrum.dir/TINYUSB-SRC/common/tusb_fifo.c.obj
+ .debug_abbrev  0x00002d19      0x5a4 CMakeFiles/Astrum.dir/TINYUSB-SRC/device/usbd.c.obj
+ .debug_abbrev  0x000032bd      0x32d CMakeFiles/Astrum.dir/TINYUSB-SRC/device/usbd_control.c.obj
+ .debug_abbrev  0x000035ea      0x4a1 CMakeFiles/Astrum.dir/TINYUSB-SRC/class/cdc/cdc_device.c.obj
+ .debug_abbrev  0x00003a8b      0x61b CMakeFiles/Astrum.dir/TINYUSB-SRC/portable/st/stm32_fsdev/dcd_stm32_fsdev.c.obj
+ .debug_abbrev  0x000040a6      0x23c CMakeFiles/Astrum.dir/TINYUSB-SRC/portable/st/stm32_fsdev/fsdev_common.c.obj
+ .debug_abbrev  0x000042e2      0x1ce CMakeFiles/Astrum.dir/Core/Src/USB/usb_descriptors.c.obj
+ .debug_abbrev  0x000044b0      0x3e4 CMakeFiles/Astrum.dir/Core/Src/USB/usb.cpp.obj
+ .debug_abbrev  0x00004894      0x424 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-findfp.o)
+ .debug_abbrev  0x00004cb8      0x228 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-vsnprintf.o)
+ .debug_abbrev  0x00004ee0       0x9e C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-memset.o)
+ .debug_abbrev  0x00004f7e      0x1f7 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-reent.o)
+ .debug_abbrev  0x00005175      0x149 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-impure.o)
+ .debug_abbrev  0x000052be      0x15e C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-errno.o)
+ .debug_abbrev  0x0000541c       0xc9 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-init.o)
+ .debug_abbrev  0x000054e5      0x115 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-lock.o)
+ .debug_abbrev  0x000055fa       0xc1 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-memcpy-stub.o)
+ .debug_abbrev  0x000056bb       0x28 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-strlen.o)
+ .debug_abbrev  0x000056e3      0x236 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-freer.o)
+ .debug_abbrev  0x00005919      0x24a C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-mallocr.o)
+ .debug_abbrev  0x00005b63      0x1bf C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-mlock.o)
+ .debug_abbrev  0x00005d22      0x31e C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-nano-svfprintf.o)
+ .debug_abbrev  0x00006040      0x28e C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-nano-vfprintf_i.o)
+ .debug_abbrev  0x000062ce       0xac C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-memmove.o)
+ .debug_abbrev  0x0000637a      0x1da C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-sbrkr.o)
+ .debug_abbrev  0x00006554       0xb1 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-memchr-stub.o)
+ .debug_abbrev  0x00006605      0x217 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-reallocr.o)
+ .debug_abbrev  0x0000681c      0x196 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-msizer.o)
 
 .debug_aranges  0x00000000     0x15e8
  .debug_aranges
@@ -9119,58 +9116,58 @@ LOAD linker stubs
  .debug_line    0x0001e2c3      0x279 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-reallocr.o)
  .debug_line    0x0001e53c      0x205 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-msizer.o)
 
-.debug_str      0x00000000   0x1228c4
- .debug_str     0x00000000   0x1228c4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32h5xx.c.obj
+.debug_str      0x00000000   0x1228b3
+ .debug_str     0x00000000   0x1228b3 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32h5xx.c.obj
                              0x1003b7 (size before relaxing)
- .debug_str     0x001228c4   0x1008fc cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc.c.obj
- .debug_str     0x001228c4   0x100b86 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc_ex.c.obj
- .debug_str     0x001228c4   0x10018e cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_gpio.c.obj
- .debug_str     0x001228c4   0x100573 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_pwr_ex.c.obj
- .debug_str     0x001228c4   0x100d00 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_cortex.c.obj
- .debug_str     0x001228c4   0x101145 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal.c.obj
- .debug_str     0x001228c4   0x100076 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_crc.c.obj
- .debug_str     0x001228c4   0x10001c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_crc_ex.c.obj
- .debug_str     0x001228c4   0x100809 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_pcd.c.obj
- .debug_str     0x001228c4   0x100391 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_pcd_ex.c.obj
- .debug_str     0x001228c4   0x100569 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_ll_usb.c.obj
- .debug_str     0x001228c4   0x10e104 CMakeFiles/Astrum.dir/Core/Src/main.c.obj
- .debug_str     0x001228c4   0x10007e CMakeFiles/Astrum.dir/Core/Src/gpio.c.obj
- .debug_str     0x001228c4   0x1001fb CMakeFiles/Astrum.dir/Core/Src/crc.c.obj
- .debug_str     0x001228c4   0x100e34 CMakeFiles/Astrum.dir/Core/Src/usb.c.obj
- .debug_str     0x001228c4   0x10db88 CMakeFiles/Astrum.dir/Core/Src/stm32h5xx_it.c.obj
- .debug_str     0x001228c4    0xffda2 CMakeFiles/Astrum.dir/Core/Src/stm32h5xx_hal_msp.c.obj
- .debug_str     0x001228c4     0x7103 CMakeFiles/Astrum.dir/Core/Src/sysmem.c.obj
- .debug_str     0x001228c4       0xa8 CMakeFiles/Astrum.dir/startup_stm32h523xx.s.obj
- .debug_str     0x001228c4   0x117833 CMakeFiles/Astrum.dir/Core/Src/app.cpp.obj
- .debug_str     0x001228c4    0x153ab CMakeFiles/Astrum.dir/TINYUSB-SRC/tusb.c.obj
- .debug_str     0x001228c4     0xc69c CMakeFiles/Astrum.dir/TINYUSB-SRC/common/tusb_fifo.c.obj
- .debug_str     0x001228c4    0x160e2 CMakeFiles/Astrum.dir/TINYUSB-SRC/device/usbd.c.obj
- .debug_str     0x001228c4    0x14d77 CMakeFiles/Astrum.dir/TINYUSB-SRC/device/usbd_control.c.obj
- .debug_str     0x001228c4    0x15fed CMakeFiles/Astrum.dir/TINYUSB-SRC/class/cdc/cdc_device.c.obj
- .debug_str     0x001228c4   0x1072f3 CMakeFiles/Astrum.dir/TINYUSB-SRC/portable/st/stm32_fsdev/dcd_stm32_fsdev.c.obj
- .debug_str     0x001228c4   0x1065e8 CMakeFiles/Astrum.dir/TINYUSB-SRC/portable/st/stm32_fsdev/fsdev_common.c.obj
- .debug_str     0x001228c4   0x10f0eb CMakeFiles/Astrum.dir/Core/Src/USB/usb_descriptors.c.obj
- .debug_str     0x001228c4    0x1a8d3 CMakeFiles/Astrum.dir/Core/Src/USB/usb.cpp.obj
- .debug_str     0x001228c4      0x7bc C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-findfp.o)
- .debug_str     0x001228c4      0x58a C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-vsnprintf.o)
- .debug_str     0x001228c4      0x219 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-memset.o)
- .debug_str     0x001228c4      0x558 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-reent.o)
- .debug_str     0x001228c4      0x539 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-impure.o)
- .debug_str     0x001228c4      0x533 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-errno.o)
- .debug_str     0x001228c4      0x27a C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-init.o)
- .debug_str     0x001228c4      0x3b0 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-lock.o)
- .debug_str     0x001228c4      0x237 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-memcpy-stub.o)
- .debug_str     0x001228c4       0xf7 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-strlen.o)
- .debug_str     0x001228c4      0x5b9 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-freer.o)
- .debug_str     0x001228c4      0x61a C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-mallocr.o)
- .debug_str     0x001228c4      0x5bb C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-mlock.o)
- .debug_str     0x001228c4      0x882 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-nano-svfprintf.o)
- .debug_str     0x001228c4      0x818 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-nano-vfprintf_i.o)
- .debug_str     0x001228c4      0x234 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-memmove.o)
- .debug_str     0x001228c4      0x542 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-sbrkr.o)
- .debug_str     0x001228c4      0x233 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-memchr-stub.o)
- .debug_str     0x001228c4      0x5af C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-reallocr.o)
- .debug_str     0x001228c4      0x582 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-msizer.o)
+ .debug_str     0x001228b3   0x1008fc cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc.c.obj
+ .debug_str     0x001228b3   0x100b86 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_rcc_ex.c.obj
+ .debug_str     0x001228b3   0x10018e cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_gpio.c.obj
+ .debug_str     0x001228b3   0x100573 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_pwr_ex.c.obj
+ .debug_str     0x001228b3   0x100d00 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_cortex.c.obj
+ .debug_str     0x001228b3   0x101145 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal.c.obj
+ .debug_str     0x001228b3   0x100076 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_crc.c.obj
+ .debug_str     0x001228b3   0x10001c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_crc_ex.c.obj
+ .debug_str     0x001228b3   0x100809 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_pcd.c.obj
+ .debug_str     0x001228b3   0x100391 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_pcd_ex.c.obj
+ .debug_str     0x001228b3   0x100569 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_ll_usb.c.obj
+ .debug_str     0x001228b3   0x10e0f3 CMakeFiles/Astrum.dir/Core/Src/main.c.obj
+ .debug_str     0x001228b3   0x10007e CMakeFiles/Astrum.dir/Core/Src/gpio.c.obj
+ .debug_str     0x001228b3   0x1001fb CMakeFiles/Astrum.dir/Core/Src/crc.c.obj
+ .debug_str     0x001228b3   0x100e34 CMakeFiles/Astrum.dir/Core/Src/usb.c.obj
+ .debug_str     0x001228b3   0x10db89 CMakeFiles/Astrum.dir/Core/Src/stm32h5xx_it.c.obj
+ .debug_str     0x001228b3    0xffda2 CMakeFiles/Astrum.dir/Core/Src/stm32h5xx_hal_msp.c.obj
+ .debug_str     0x001228b3     0x7103 CMakeFiles/Astrum.dir/Core/Src/sysmem.c.obj
+ .debug_str     0x001228b3       0xa8 CMakeFiles/Astrum.dir/startup_stm32h523xx.s.obj
+ .debug_str     0x001228b3   0x117834 CMakeFiles/Astrum.dir/Core/Src/app.cpp.obj
+ .debug_str     0x001228b3    0x153ac CMakeFiles/Astrum.dir/TINYUSB-SRC/tusb.c.obj
+ .debug_str     0x001228b3     0xc69d CMakeFiles/Astrum.dir/TINYUSB-SRC/common/tusb_fifo.c.obj
+ .debug_str     0x001228b3    0x160e3 CMakeFiles/Astrum.dir/TINYUSB-SRC/device/usbd.c.obj
+ .debug_str     0x001228b3    0x14d78 CMakeFiles/Astrum.dir/TINYUSB-SRC/device/usbd_control.c.obj
+ .debug_str     0x001228b3    0x15fee CMakeFiles/Astrum.dir/TINYUSB-SRC/class/cdc/cdc_device.c.obj
+ .debug_str     0x001228b3   0x1072f4 CMakeFiles/Astrum.dir/TINYUSB-SRC/portable/st/stm32_fsdev/dcd_stm32_fsdev.c.obj
+ .debug_str     0x001228b3   0x1065e9 CMakeFiles/Astrum.dir/TINYUSB-SRC/portable/st/stm32_fsdev/fsdev_common.c.obj
+ .debug_str     0x001228b3   0x10f0ec CMakeFiles/Astrum.dir/Core/Src/USB/usb_descriptors.c.obj
+ .debug_str     0x001228b3    0x1a8d4 CMakeFiles/Astrum.dir/Core/Src/USB/usb.cpp.obj
+ .debug_str     0x001228b3      0x7bc C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-findfp.o)
+ .debug_str     0x001228b3      0x58a C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-vsnprintf.o)
+ .debug_str     0x001228b3      0x219 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-memset.o)
+ .debug_str     0x001228b3      0x558 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-reent.o)
+ .debug_str     0x001228b3      0x539 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-impure.o)
+ .debug_str     0x001228b3      0x533 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-errno.o)
+ .debug_str     0x001228b3      0x27a C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-init.o)
+ .debug_str     0x001228b3      0x3b0 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-lock.o)
+ .debug_str     0x001228b3      0x237 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-memcpy-stub.o)
+ .debug_str     0x001228b3       0xf7 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-strlen.o)
+ .debug_str     0x001228b3      0x5b9 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-freer.o)
+ .debug_str     0x001228b3      0x61a C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-mallocr.o)
+ .debug_str     0x001228b3      0x5bb C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-mlock.o)
+ .debug_str     0x001228b3      0x882 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-nano-svfprintf.o)
+ .debug_str     0x001228b3      0x818 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-nano-vfprintf_i.o)
+ .debug_str     0x001228b3      0x234 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-memmove.o)
+ .debug_str     0x001228b3      0x542 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-sbrkr.o)
+ .debug_str     0x001228b3      0x233 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-memchr-stub.o)
+ .debug_str     0x001228b3      0x5af C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-reallocr.o)
+ .debug_str     0x001228b3      0x582 C:/Users/brian/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libg_nano.a(libc_a-msizer.o)
 
 .comment        0x00000000       0x43
  .comment       0x00000000       0x43 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32h5xx.c.obj
