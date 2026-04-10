@@ -1,12 +1,5 @@
 cmake_minimum_required(VERSION 3.22)
 
-#
-# This file is generated only once,
-# and is not re-generated if converter is called multiple times.
-#
-# User is free to modify the file as much as necessary
-#
-
 # Setup compiler settings
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_C_STANDARD_REQUIRED ON)
@@ -21,6 +14,10 @@ set(CMAKE_CXX_EXTENSIONS ON)
 if(NOT CMAKE_BUILD_TYPE)
     set(CMAKE_BUILD_TYPE "Debug")
 endif()
+
+# Set Release optimization flags (does NOT affect Debug)
+set(CMAKE_C_FLAGS_RELEASE "-O2 -g -DNDEBUG")
+set(CMAKE_CXX_FLAGS_RELEASE "-O2 -g -DNDEBUG")
 
 # Set the project name
 set(CMAKE_PROJECT_NAME Astrum)
@@ -43,13 +40,10 @@ add_subdirectory(cmake/stm32cubemx)
 
 # Link directories setup
 target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
-    # Add user defined library search paths
 )
 
 # Add sources to executable
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE
-    # Add user sources here
-
     # C++ sources
     "Core/Src/app.cpp"
 
@@ -63,20 +57,21 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     "TINYUSB-SRC/portable/st/stm32_fsdev/dcd_stm32_fsdev.c"
     "TINYUSB-SRC/portable/st/stm32_fsdev/fsdev_common.c"
 
-    "Core/Src/USB/usb_descriptors.c" 
-    "Core/Src/USB/usb.cpp"
+    "Core/Src/Systems/USB/usb_descriptors.c"
+    "Core/Src/Systems/USB/usb.cpp"
+
+    # IMU stack sources
+    "Core/Src/Systems/IMU/imu.cpp"
 )
 
 # Add include paths
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
-    # Add user defined include paths
     Core/Inc
     TINYUSB-SRC
 )
 
 # Add project symbols (macros)
 target_compile_definitions(${CMAKE_PROJECT_NAME} PRIVATE
-    # Add user defined symbols
 )
 
 # Remove wrong libob.a library dependency when using cpp files
@@ -85,8 +80,9 @@ list(REMOVE_ITEM CMAKE_C_IMPLICIT_LINK_LIBRARIES ob)
 # Add linked libraries
 target_link_libraries(${CMAKE_PROJECT_NAME}
     stm32cubemx
-    # Add user defined libraries
 )
+
+target_link_options(${CMAKE_PROJECT_NAME} PRIVATE -u _printf_float)
 
 # Make BIN file
 add_custom_command(TARGET ${CMAKE_PROJECT_NAME} POST_BUILD
@@ -94,8 +90,12 @@ add_custom_command(TARGET ${CMAKE_PROJECT_NAME} POST_BUILD
     COMMENT "Generating binary file..."
 )
 
-# Fix intellisense 
+# Fix IntelliSense
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fno-exceptions -fno-rtti")
 
+
+# --- Added Release Configuration (no changes to existing Debug setup) ---
+set(CMAKE_C_FLAGS_RELEASE "-O2 -g -DNDEBUG")
+set(CMAKE_CXX_FLAGS_RELEASE "-O2 -g -DNDEBUG")

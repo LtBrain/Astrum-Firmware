@@ -71,8 +71,6 @@ void USBTransport::task()
     tud_task();
 
     if (!connected()) return;
-    
-    uint32_t count = 0;
 
     while (!isEmpty()) {
 
@@ -80,6 +78,7 @@ void USBTransport::task()
         if (available == 0) break;
 
         uint8_t temp[128]; //TinyUSB automatic packet split
+        uint32_t count = 0;
 
         while (!isEmpty() && count < sizeof(temp) && count < available) {
             temp[count++] = buffer[tail];
@@ -89,7 +88,7 @@ void USBTransport::task()
         tud_cdc_n_write(0, temp, count);
     }
 
-    if (count < 64) {
+    // if (count < 64) {
         tud_cdc_write_flush();
-    }
+    // }
 }

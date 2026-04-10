@@ -27,6 +27,7 @@ set(MX_Application_Src
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Core/Src/main.c
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Core/Src/gpio.c
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Core/Src/crc.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/../../Core/Src/icache.c
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Core/Src/usb.c
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Core/Src/custom_bus.c
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Core/Src/stm32h5xx_it.c
@@ -55,6 +56,7 @@ set(STM32_Drivers_Src
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_exti.c
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_crc.c
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_crc_ex.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/../../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_icache.c
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_pcd.c
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_pcd_ex.c
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_ll_usb.c

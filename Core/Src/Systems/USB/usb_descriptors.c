@@ -41,17 +41,18 @@
 #define USB_VID   0xCafe
 #define USB_BCD   0x0200
 
+extern uint32_t cached_uid[3];
+
 size_t board_get_unique_id(uint8_t id[], size_t max_len) {
-	(void) max_len;
-	volatile uint32_t * stm32_uuid = (volatile uint32_t *) UID_BASE;
-	uint32_t *id32 = (uint32_t *) (uintptr_t) id;
-	uint8_t const len = 12;
+    (void) max_len;
 
-	id32[0] = stm32_uuid[0];
-	id32[1] = stm32_uuid[1];
-	id32[2] = stm32_uuid[2];
+    uint32_t *id32 = (uint32_t *)(uintptr_t) id;
 
-	return len;
+    id32[0] = cached_uid[0];
+    id32[1] = cached_uid[1];
+    id32[2] = cached_uid[2];
+
+    return 12;
 }
 
 //--------------------------------------------------------------------+
@@ -150,7 +151,7 @@ static uint8_t const desc_fs_configuration[] = {
   TUD_CDC_DESCRIPTOR(ITF_NUM_CDC_0, 4, EPNUM_CDC_0_NOTIF, 16, EPNUM_CDC_0_OUT, EPNUM_CDC_0_IN, 64),
 
   // 2nd CDC: Interface number, string index, EP notification address and size, EP data address (out, in) and size.
-  TUD_CDC_DESCRIPTOR(ITF_NUM_CDC_1, 4, EPNUM_CDC_1_NOTIF, 16, EPNUM_CDC_1_OUT, EPNUM_CDC_1_IN, 64),
+  TUD_CDC_DESCRIPTOR(ITF_NUM_CDC_1, 5, EPNUM_CDC_1_NOTIF, 16, EPNUM_CDC_1_OUT, EPNUM_CDC_1_IN, 64),
 };
 
 #if TUD_OPT_HIGH_SPEED
@@ -231,9 +232,10 @@ enum {
 static char const *string_desc_arr[] = {
   (const char[]) { 0x09, 0x04 }, // 0: is supported language is English (0x0409)
   "TinyUSB",                     // 1: Manufacturer
-  "TinyUSB Device",              // 2: Product
+  "TinyUSB Dual CDC Device",     // 2: Product
   NULL,                          // 3: Serials will use unique ID if possible
-  "TinyUSB CDC",                 // 4: CDC Interface
+  "CDC 0",                       // 4: CDC Interface
+  "CDC 1",                       // 5: CDC Interface
 };
 
 static uint16_t _desc_str[32 + 1];

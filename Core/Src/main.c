@@ -17,8 +17,10 @@
   */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
+#include "stm32h5xx_hal.h"
 #include "main.h"
 #include "crc.h"
+#include "icache.h"
 #include "usb.h"
 #include "gpio.h"
 
@@ -47,7 +49,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-
+uint32_t cached_uid[3];
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -58,7 +60,12 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+void board_cache_uid(void)
+{
+    for (int i = 0; i < 3; i++) {
+        cached_uid[i] = ((uint32_t*)UID_BASE)[i];
+    }
+}
 /* USER CODE END 0 */
 
 /**
@@ -92,6 +99,12 @@ int main(void)
   MX_GPIO_Init();
   MX_USB_PCD_Init();
   MX_CRC_Init();
+
+  /* USER CODE BEGIN USB THING */
+  board_cache_uid();
+  /* USER CODE END USB THING */
+
+  MX_ICACHE_Init();
   /* USER CODE BEGIN 2 */
   tusb_rhport_init_t dev_init = {
 		  .role = TUSB_ROLE_DEVICE,
