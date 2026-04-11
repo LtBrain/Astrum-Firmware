@@ -17,6 +17,7 @@ set(MX_Include_Dirs
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Drivers/CMSIS/Device/ST/STM32H5xx/Include
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Drivers/CMSIS/Include
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Drivers/BSP/Components/lsm6dsr
+    ${CMAKE_CURRENT_SOURCE_DIR}/../../Middlewares/ST/STM32_MotionFX_Library/Inc
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Drivers/BSP/Components/Common
 )
 
@@ -30,6 +31,7 @@ set(MX_Application_Src
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Core/Src/dcache.c
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Core/Src/icache.c
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Core/Src/spi.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/../../Core/Src/tim.c
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Core/Src/usb.c
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Core/Src/custom_bus.c
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Core/Src/stm32h5xx_it.c
@@ -62,6 +64,8 @@ set(STM32_Drivers_Src
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_icache.c
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_spi.c
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_spi_ex.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/../../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_tim.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/../../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_tim_ex.c
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_pcd.c
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_pcd_ex.c
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_ll_usb.c
@@ -76,9 +80,11 @@ set(STM32_Drivers_Src
 # Link directories setup
 set(MX_LINK_DIRS
 
+    ${CMAKE_CURRENT_SOURCE_DIR}/../../Middlewares/ST/STM32_MotionFX_Library/Lib
 )
 # Project static libraries
-set(MX_LINK_LIBS 
+set(MX_LINK_LIBS  
+	:MotionFX_CM33F_wc32_ot_hard.a
     STM32_Drivers
     ${TOOLCHAIN_LINK_LIBRARIES}
     

@@ -22,6 +22,7 @@
 #include "dcache.h"
 #include "icache.h"
 #include "spi.h"
+#include "tim.h"
 #include "usb.h"
 #include "gpio.h"
 
@@ -105,9 +106,9 @@ int main(void)
   MX_USB_PCD_Init();
   MX_CRC_Init();
   MX_ICACHE_Init();
-  MX_DCACHE1_Init();
   MX_SPI3_Init();
-  
+  MX_DCACHE1_Init();
+  MX_TIM5_Init();
   /* USER CODE BEGIN 2 */
   tusb_rhport_init_t dev_init = {
 		  .role = TUSB_ROLE_DEVICE,
