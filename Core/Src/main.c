@@ -19,6 +19,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "crc.h"
+#include "dcache.h"
 #include "icache.h"
 #include "spi.h"
 #include "usb.h"
@@ -103,11 +104,11 @@ int main(void)
   MX_GPIO_Init();
   MX_USB_PCD_Init();
   MX_CRC_Init();
-  MX_SPI3_Init();
   MX_ICACHE_Init();
+  MX_DCACHE1_Init();
+  MX_SPI3_Init();
   
   /* USER CODE BEGIN 2 */
-  
   tusb_rhport_init_t dev_init = {
 		  .role = TUSB_ROLE_DEVICE,
 		  .speed = TUSB_SPEED_FULL
